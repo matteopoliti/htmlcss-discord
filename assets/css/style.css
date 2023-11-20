@@ -159,25 +159,51 @@ section .container button{
 }
 
 footer{
-    height: 500px;
-    background-color: #23272a;
-    padding: 80px 200px 100px ;
+    background-color: var(--black);
+    color: white;
+    padding: 100px;
 }
 
-footer section{
-    display: flex;
-    justify-content: space-evenly;
-}
-
-footer section ul{
+footer ul li{
     list-style-type: none;
 }
 
-hr{
-    margin-block: 25px;
+footer .container{
+    display: flex;
+    /* justify-content: space-between; */
 }
 
-footer div{
+footer .container > div{
+    flex-grow: 1;
+}
+
+footer .container>div:first-child{
+    flex-grow: 2;
+}
+
+footer .footer-login{
     display: flex;
     justify-content: space-between;
 }
+
+footer .container h3{
+    font-size: 30px;
+    color: #7289da;
+    margin-bottom:30px;
+}
+
+footer .container span>img{
+    width: 15px;
+}
+footer .container span{
+    font-size: 12px;
+}
+
+footer .social li{
+    display: inline;
+    margin-right: 20px;
+}
+footer .social{
+    margin-top: 15px;
+}
+
